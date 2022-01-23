@@ -4,7 +4,7 @@ filetype plugin on
 
 set path+=**
 
-let g:netrw_banner=0
+set updatetime=50
 
 set history=1000
 set shiftwidth=4
@@ -218,7 +218,7 @@ cmp.setup {
       -- vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
-        luasnip = "[LuaSnip]",
+        luasnip = "[Snippet]",
         buffer = "[File]",
         path = "[Path]",
       })[entry.source.name]
@@ -262,3 +262,8 @@ nnoremap <Leader>T :ToggleTerm direction=float<CR>
 noremap <Space>/ :CommentToggle<CR>
 noremap <Leader>st :Telescope live_grep<CR>
 noremap <Leader>sf :Telescope find_files<CR>
+
+imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'
+inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
+snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
+snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
