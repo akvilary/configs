@@ -8,4 +8,3 @@ source $HOME/.config/nvim/settings/key_bindings.vim
 
 " All plugin's options in lua language there
 lua require('modules')
-
