@@ -33,16 +33,21 @@ Plug 'terrortylor/nvim-comment'
 " Git
 Plug 'lewis6991/gitsigns.nvim'
 
-" UNVERIFIED PLUGINS BLOCK
 " cmp plugins
 Plug 'hrsh7th/nvim-cmp' " The completion plugin
 Plug 'hrsh7th/cmp-buffer' " buffer completions
 Plug 'hrsh7th/cmp-path' " path completions
 Plug 'hrsh7th/cmp-cmdline' " cmdline completions
 Plug 'saadparwaiz1/cmp_luasnip' " snippet completions
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lua'
 
 " Snippets
 Plug 'L3MON4D3/LuaSnip' " snippet engine
 Plug 'rafamadriz/friendly-snippets' " a bunch of snippets to use
+
+" LSP
+Plug 'neovim/nvim-lspconfig' " enable LSP
+Plug 'williamboman/nvim-lsp-installer' " language server installer
 call plug#end()
 

@@ -15,7 +15,7 @@ set nobackup
 set undofile
 set history=1000
 set mouse=a
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " completion
 set wildmenu

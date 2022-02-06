@@ -4,13 +4,15 @@ require('modules.lualine')
 
 require('modules.cmp')
 
+require('modules.lsp')
+
+require('modules.nvim_tree')
+
 require('nvim_comment').setup()
 
 require('nvim-autopairs').setup()
 
 require('gitsigns').setup()
-
-require('nvim-tree').setup()
 
 require('project_nvim').setup()
 

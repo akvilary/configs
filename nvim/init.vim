@@ -4,7 +4,7 @@
 " Attention: order of source loading is important
 source $HOME/.config/nvim/settings/plugins.vim
 source $HOME/.config/nvim/settings/sets.vim
-source $HOME/.config/nvim/settings/key_bindings.vim
+source $HOME/.config/nvim/settings/keymaps.vim
 
 " All plugin's options in lua language there
 lua require('modules')
