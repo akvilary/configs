@@ -4,6 +4,7 @@ call plug#begin()
 " VERIFIED PLUGINS BLOCK
 " all for syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'p00f/nvim-ts-rainbow'
 Plug 'windwp/nvim-autopairs'
 
 " Appearence
@@ -14,6 +15,8 @@ Plug 'nvim-lualine/lualine.nvim'
 
 " Debug
 Plug 'mfussenegger/nvim-dap'
+Plug 'mfussenegger/nvim-dap-python'
+Plug 'nvim-telescope/telescope-dap.nvim'
 Plug 'Pocco81/DAPInstall.nvim'
 Plug 'szw/vim-maximizer'
 

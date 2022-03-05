@@ -4,9 +4,13 @@ require('modules.lualine')
 
 require('modules.cmp')
 
+require('modules.dap')
+
 require('modules.lsp')
 
 require('modules.nvim_tree')
+
+require('modules.treessiter')
 
 require('nvim_comment').setup()
 
