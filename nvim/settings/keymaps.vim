@@ -1,6 +1,6 @@
 " ALL KEY BINDINGS ARE HERE
 
-let mapleader="\<Leader>"
+let mapleader="\<Space>"
 nnoremap <Leader>x :BufferClose<CR>
 nnoremap <Leader>q :BufferClose<CR><C-w><C-w>  
 
