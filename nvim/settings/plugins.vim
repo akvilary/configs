@@ -15,7 +15,10 @@ Plug 'nvim-lualine/lualine.nvim'
 
 " Debug
 Plug 'mfussenegger/nvim-dap'
-Plug 'mfussenegger/nvim-dap-python'
+" Plug 'mfussenegger/nvim-dap-python'
+Plug 'rcarriga/nvim-dap-ui'
+Plug 'rcarriga/cmp-dap'
+Plug 'theHamsta/nvim-dap-virtual-text'
 Plug 'nvim-telescope/telescope-dap.nvim'
 Plug 'Pocco81/DAPInstall.nvim'
 Plug 'szw/vim-maximizer'
